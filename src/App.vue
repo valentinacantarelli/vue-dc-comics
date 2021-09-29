@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <main>
+      <MainSection/>
+      <BannerIcons/>
+    </main>
+    <Footer/>
   </div>
 </template>
 
@@ -24,7 +28,5 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/common";
-#app {
-  
-}
+
 </style>
