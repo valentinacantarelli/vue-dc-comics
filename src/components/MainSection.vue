@@ -1,5 +1,7 @@
 <template>
-  
+  <div class="container">
+      <div></div>
+  </div>
 </template>
 
 <script>
@@ -9,5 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scope>
-
+.container{
+   
+   color:pink;
+    display:flex;
+}
 </style>

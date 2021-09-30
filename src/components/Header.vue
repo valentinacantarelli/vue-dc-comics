@@ -1,12 +1,15 @@
 <template>
-    <div class="container">
-        <img src="../assets/img/dc-logo.png" alt="Logo Dc">
-        <ul>
-            <li v-for="(link, index) in menu" :key="index">
-                <a :href="link.url" :class="{ active : link.current }">{{link.text}}</a>
-            </li>
-        </ul>
-    </div>
+    <header>
+        <div class="container">
+            <img src="../assets/img/dc-logo.png" alt="Logo Dc">
+            <ul>
+                <li v-for="(link, index) in menu" :key="index">
+                    <a :href="link.url" :class="{ active : link.current }">{{link.text}}</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
 </template>
 
 <script>
@@ -72,35 +75,45 @@ export default {
 </script>
 
 <style lang="scss" scope>
-@import "src/assets/style/variables";
-.container{
-    width:1000px;
+@import "../assets/style/variables";
+@mixin larghezza{
+    width:65%;
     margin:auto;
+}
+header{
+    width:100%;
+    height:95px;
+    position:fixed;
+    
+}
+.container{
     display: flex;
     justify-content: space-between;
-
+    top:0;
+    left:0;
+    @include larghezza;
+    
     img{
         margin-top:20px;
         height: 60px;
     }
     ul{
-        display:flex;
-        vertical-align: middle;
-        padding:40px 0;
-
+        display:flex;        
+        
         li{
             list-style: none;
-             padding:0 13px;          
+             padding:40px 13px;          
             font-size: 13px;
 
             a{
                 text-decoration: none;
                 color:black;
                 font-weight: bold;
-                padding:35px 0; 
+                border-bottom: 3px solid transparent; 
                 
-                &.active{
+                &:hover{
                     border-bottom:3px solid #0282f9;
+                    padding:35px 0;
                     color:#0282f9;
                 }
             }
