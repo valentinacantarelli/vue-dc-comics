@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scope>
+@import "../assets/style/common";
 section{
    
     background-color:rgb(0, 0, 0);
@@ -18,6 +19,15 @@ section{
     width:100%;
     margin-top:100px;
     color:white;
+    display: flex;
+    justify-content: center;
+    
+    .container{
+            width:65%;
+            margin:auto;
+        }
+
+    
   
 }
 </style>

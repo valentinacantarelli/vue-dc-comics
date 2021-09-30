@@ -28,12 +28,8 @@ export default {
 
 <style lang="scss">
 @import "./assets/style/common";
-// #app{
-//   width:65%;
-//   margin: auto;
-// }
-main{
-  
+
+ main{
   display:flex;
-}
+ }
 </style>
