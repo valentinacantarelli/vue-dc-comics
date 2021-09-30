@@ -83,7 +83,7 @@ export default {
 header{
     width:100%;
     height:95px;
-    position:fixed;
+    
     
 }
 .container{
@@ -110,9 +110,9 @@ header{
                 border-bottom: 3px solid transparent; 
                 
                 &:hover{
-                    border-bottom:3px solid #0282f9;
+                    border-bottom:3px solid $defaultColor;
                     padding:35px 0;
-                    color:#0282f9;
+                    color:$defaultColor;
                 }
             }
         }
