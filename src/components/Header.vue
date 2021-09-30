@@ -89,8 +89,6 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
-    top:0;
-    left:0;
     @include larghezza;
     
     img{

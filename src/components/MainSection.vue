@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-      <div></div>
-  </div>
+  <section>
+      <div class="container">blabla</div>
+  </section>
 </template>
 
 <script>
@@ -11,9 +11,13 @@ export default {
 </script>
 
 <style lang="scss" scope>
-.container{
+section{
    
-   color:pink;
-    display:flex;
+    background-color:rgb(0, 0, 0);
+    height:100px;
+    width:100%;
+    margin-top:100px;
+    color:white;
+  
 }
 </style>
