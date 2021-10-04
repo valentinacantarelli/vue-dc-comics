@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <main>
+      <Hero :bgImg="require('./assets/img/jumbotron.jpg')"/>
       <MainSection/>
       <BannerIcons/>
     </main>
@@ -14,6 +15,7 @@ import BannerIcons from './components/BannerIcons.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import MainSection from './components/MainSection.vue'
+import Hero from './components/Hero.vue'
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     BannerIcons,
     Footer,
     Header,
-    MainSection
+    MainSection,
+    Hero
   }
 }
 </script>
@@ -29,7 +32,5 @@ export default {
 <style lang="scss">
 @import "./assets/style/common";
 
- main{
-  display:flex;
- }
+
 </style>

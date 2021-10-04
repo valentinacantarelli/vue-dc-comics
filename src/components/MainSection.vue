@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="top-main">
       <div class="container">blabla</div>
   </section>
 </template>
@@ -12,20 +12,16 @@ export default {
 
 <style lang="scss" scope>
 @import "../assets/style/common";
-section{
+.top-main{
    
     background-color:rgb(0, 0, 0);
     height:100px;
-    width:100%;
-    margin-top:100px;
+    width:100%;    
     color:white;
     display: flex;
     justify-content: center;
     
-    .container{
-            width:65%;
-            margin:auto;
-        }
+    
 
     
   
